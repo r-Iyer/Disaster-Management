@@ -1,0 +1,81 @@
+10 epochs. 
+Train test split =75\25.
+Train cross validation split=70/30
+Training samples = 551
+Test samples=263
+Cross validation samples=237
+_________________________________________________________
+All layers frozen
+Epoch 1/10
+18/18 [==============================] - 2s 106ms/step - loss: 1.0683 - accuracy: 0.5771 - val_loss: 1.0236 - val_accuracy: 0.8101
+Epoch 2/10
+18/18 [==============================] - 2s 87ms/step - loss: 1.0097 - accuracy: 0.8475 - val_loss: 1.0057 - val_accuracy: 0.7975
+Epoch 3/10
+18/18 [==============================] - 2s 103ms/step - loss: 0.9746 - accuracy: 0.9074 - val_loss: 0.9944 - val_accuracy: 0.7932
+Epoch 4/10
+18/18 [==============================] - 2s 87ms/step - loss: 0.9418 - accuracy: 0.9510 - val_loss: 0.9658 - val_accuracy: 0.8228
+Epoch 5/10
+18/18 [==============================] - 2s 84ms/step - loss: 0.9171 - accuracy: 0.9492 - val_loss: 0.9468 - val_accuracy: 0.8101
+Epoch 6/10
+18/18 [==============================] - 2s 83ms/step - loss: 0.8855 - accuracy: 0.9691 - val_loss: 0.9317 - val_accuracy: 0.8186
+Epoch 7/10
+18/18 [==============================] - 2s 84ms/step - loss: 0.8574 - accuracy: 0.9800 - val_loss: 0.9262 - val_accuracy: 0.8143
+Epoch 8/10
+18/18 [==============================] - 1s 83ms/step - loss: 0.8337 - accuracy: 0.9855 - val_loss: 0.8969 - val_accuracy: 0.8270
+Epoch 9/10
+18/18 [==============================] - 2s 85ms/step - loss: 0.8107 - accuracy: 0.9873 - val_loss: 0.8823 - val_accuracy: 0.8312
+Epoch 10/10
+18/18 [==============================] - 2s 99ms/step - loss: 0.7889 - accuracy: 0.9873 - val_loss: 0.8690 - val_accuracy: 0.8228
+<tensorflow.python.keras.callbacks.History at 0x7fe3216db8d0>
+
+0.8555133079847909
+[[81  0  6]
+ [ 9 66 13]
+ [ 4  6 78]]
+              precision    recall  f1-score   support
+
+           0       0.86      0.93      0.90        87
+           1       0.92      0.75      0.83        88
+           2       0.80      0.89      0.84        88
+
+    accuracy                           0.86       263
+   macro avg       0.86      0.86      0.85       263
+weighted avg       0.86      0.86      0.85       263
+
+_________________________________________________________
+Unfrozen from block5_conv1
+Epoch 1/10
+18/18 [==============================] - 585s 33s/step - loss: 0.9064 - accuracy: 0.6007 - val_loss: 0.7945 - val_accuracy: 0.6751
+Epoch 2/10
+18/18 [==============================] - 590s 33s/step - loss: 0.4831 - accuracy: 0.8385 - val_loss: 0.6020 - val_accuracy: 0.7300
+Epoch 3/10
+18/18 [==============================] - 594s 33s/step - loss: 0.2743 - accuracy: 0.9274 - val_loss: 0.5515 - val_accuracy: 0.7595
+Epoch 4/10
+18/18 [==============================] - 588s 33s/step - loss: 0.1902 - accuracy: 0.9546 - val_loss: 0.4253 - val_accuracy: 0.8312
+Epoch 5/10
+18/18 [==============================] - 585s 32s/step - loss: 0.1003 - accuracy: 0.9819 - val_loss: 0.4612 - val_accuracy: 0.8186
+Epoch 6/10
+18/18 [==============================] - 581s 32s/step - loss: 0.0666 - accuracy: 0.9964 - val_loss: 0.5788 - val_accuracy: 0.7722
+Epoch 7/10
+18/18 [==============================] - 584s 32s/step - loss: 0.0362 - accuracy: 0.9964 - val_loss: 0.4413 - val_accuracy: 0.8523
+Epoch 8/10
+18/18 [==============================] - 593s 33s/step - loss: 0.0181 - accuracy: 1.0000 - val_loss: 0.3934 - val_accuracy: 0.8692
+Epoch 9/10
+18/18 [==============================] - 595s 33s/step - loss: 0.0206 - accuracy: 0.9946 - val_loss: 0.4433 - val_accuracy: 0.8481
+Epoch 10/10
+18/18 [==============================] - ETA: 0s - loss: 0.0064 - accuracy: 1.0000 <tensorflow.python.keras.callbacks.History at 0x7fe3215e7b00>
+
+0.8631178707224335
+[[80  2  5]
+ [ 9 70  9]
+ [ 5  6 77]]
+              precision    recall  f1-score   support
+
+           0       0.85      0.92      0.88        87
+           1       0.90      0.80      0.84        88
+           2       0.85      0.88      0.86        88
+
+    accuracy                           0.86       263
+   macro avg       0.86      0.86      0.86       263
+weighted avg       0.86      0.86      0.86       263
+_______________________________________________________
